@@ -1,0 +1,5 @@
+D:\repos\Calista\src\Calista\FireplaySupport\bin\Debug\netstandard2.0\FireplaySupport.deps.json
+D:\repos\Calista\src\Calista\FireplaySupport\bin\Debug\netstandard2.0\FireplaySupport.dll
+D:\repos\Calista\src\Calista\FireplaySupport\obj\Debug\netstandard2.0\FireplaySupport.csprojAssemblyReference.cache
+D:\repos\Calista\src\Calista\FireplaySupport\obj\Debug\netstandard2.0\FireplaySupport.AssemblyInfoInputs.cache
+D:\repos\Calista\src\Calista\FireplaySupport\obj\Debug\netstandard2.0\FireplaySupport.AssemblyInfo.cs
