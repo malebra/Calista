@@ -604,15 +604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
-<<<<<<< Updated upstream:FireplaySupport/obj/project.assets.json
-      "projectName": "FireplaySupport",
-=======
+      "projectUniqueName": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj",
       "projectName": "Calista.FireplaySupport",
->>>>>>> Stashed changes:src/FireplaySupport/obj/project.assets.json
-      "projectPath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
+      "projectPath": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj",
       "packagesPath": "C:\\Users\\Borno\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\Calista\\src\\FireplaySupport\\obj\\",
+      "outputPath": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -670,5 +666,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\repos\\Calista\\src\\src\\FireplaySupport\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
