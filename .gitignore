@@ -3,4 +3,4 @@ builds/Release
 builds/Finish
 builds/libraries
 builds/lib
-\!builds/Release/FireXer2.exe
+!builds/Release/FireXer2.exe
