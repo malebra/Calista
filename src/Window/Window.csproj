@@ -128,7 +128,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\builds\libraries\Calista.FireplaySupport.dll" />
+    <EmbeddedResource Include="..\..\builds\lib\Calista.FireplaySupport.dll" />
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
