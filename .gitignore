@@ -1,6 +1,6 @@
 builds/Debug
-builds/Release
 builds/Finish
 builds/libraries
 builds/lib
+builds/Release/*
 !builds/Release/FireXer2.exe
