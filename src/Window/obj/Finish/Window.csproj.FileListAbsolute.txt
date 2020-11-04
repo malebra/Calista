@@ -1,0 +1,14 @@
+D:\repos\Calista\src\Window\bin\Finish\FireXer2.exe.config
+D:\repos\Calista\src\Window\bin\Finish\FireXer2.exe.manifest
+D:\repos\Calista\src\Window\bin\Finish\FireXer2.application
+D:\repos\Calista\src\Window\bin\Finish\FireXer2.exe
+D:\repos\Calista\src\Window\obj\Finish\Window.csprojAssemblyReference.cache
+D:\repos\Calista\src\Window\obj\Finish\FireXer2.exe.config
+D:\repos\Calista\src\Window\obj\Finish\Calista.MainWindow.MainWindow.resources
+D:\repos\Calista\src\Window\obj\Finish\Calista.MainWindow.Properties.Resources.resources
+D:\repos\Calista\src\Window\obj\Finish\Window.csproj.GenerateResource.cache
+D:\repos\Calista\src\Window\obj\Finish\Window.csproj.CoreCompileInputs.cache
+D:\repos\Calista\src\Window\obj\Finish\Window.csproj.Fody.CopyLocal.cache
+D:\repos\Calista\src\Window\obj\Finish\FireXer2.exe.manifest
+D:\repos\Calista\src\Window\obj\Finish\FireXer2.application
+D:\repos\Calista\src\Window\obj\Finish\FireXer2.exe

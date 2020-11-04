@@ -1,0 +1,12 @@
+D:\repos\Calista\src\Window\obj\Debug\Window.csprojAssemblyReference.cache
+D:\repos\Calista\src\Window\obj\Debug\Window.csproj.GenerateResource.cache
+D:\repos\Calista\src\Window\obj\Debug\Window.csproj.CoreCompileInputs.cache
+D:\repos\Calista\builds\Debug\FireXer2.exe.config
+D:\repos\Calista\builds\Debug\FireXer2.exe
+D:\repos\Calista\builds\Debug\FireXer2.pdb
+D:\repos\Calista\src\Window\obj\Debug\FireXer2.exe
+D:\repos\Calista\src\Window\obj\Debug\FireXer2.pdb
+D:\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.MainWindow.resources
+D:\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.Properties.Resources.resources
+D:\repos\Calista\src\Window\obj\Debug\FireXer2.exe.config
+D:\repos\Calista\src\Window\obj\Debug\Window.csproj.CopyComplete

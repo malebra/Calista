@@ -1,0 +1,9 @@
+D:\repos\Calista\src\FireplaySupport\bin\Finish\Calista.FireplaySupport.deps.json
+D:\repos\Calista\src\FireplaySupport\bin\Finish\Calista.FireplaySupport.dll
+D:\repos\Calista\src\FireplaySupport\bin\Finish\Calista.FireplaySupport.pdb
+D:\repos\Calista\src\FireplaySupport\obj\Finish\FireplaySupport.csprojAssemblyReference.cache
+D:\repos\Calista\src\FireplaySupport\obj\Finish\FireplaySupport.AssemblyInfoInputs.cache
+D:\repos\Calista\src\FireplaySupport\obj\Finish\FireplaySupport.AssemblyInfo.cs
+D:\repos\Calista\src\FireplaySupport\obj\Finish\FireplaySupport.csproj.CoreCompileInputs.cache
+D:\repos\Calista\src\FireplaySupport\obj\Finish\Calista.FireplaySupport.dll
+D:\repos\Calista\src\FireplaySupport\obj\Finish\Calista.FireplaySupport.pdb

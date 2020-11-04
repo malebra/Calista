@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireplaySupport", "FireplaySupport\FireplaySupport.csproj", "{747C025E-994C-4249-8B04-A6F09C8A757B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Window", "Window\Window.csproj", "{B72FED31-3176-4F92-9018-7E66E16EE617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Finish|Any CPU = Finish|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Finish|Any CPU.ActiveCfg = Finish|Any CPU
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Finish|Any CPU.Build.0 = Finish|Any CPU
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747C025E-994C-4249-8B04-A6F09C8A757B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Finish|Any CPU.ActiveCfg = Finish|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Finish|Any CPU.Build.0 = Finish|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72FED31-3176-4F92-9018-7E66E16EE617}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E300AFD4-1A41-44EF-99F5-6032F9E58D1B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+D:\repos\Calista\builds\Debug\win10-x64\Calista.FireplaySupport.deps.json
+D:\repos\Calista\builds\Debug\win10-x64\Calista.FireplaySupport.dll
+D:\repos\Calista\builds\Debug\win10-x64\Calista.FireplaySupport.pdb
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\FireplaySupport.csprojAssemblyReference.cache
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\FireplaySupport.AssemblyInfoInputs.cache
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\FireplaySupport.AssemblyInfo.cs
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\FireplaySupport.csproj.CoreCompileInputs.cache
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\Calista.FireplaySupport.dll
+D:\repos\Calista\src\FireplaySupport\obj\Debug\win10-x64\Calista.FireplaySupport.pdb

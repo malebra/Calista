@@ -1,0 +1,12 @@
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.csprojAssemblyReference.cache
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.exe.config
+D:\repos\Calista\src\TestWindow\obj\Debug\Calista.TestWindow.TestWindow.resources
+D:\repos\Calista\src\TestWindow\obj\Debug\Calista.TestWindow.Properties.Resources.resources
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.csproj.GenerateResource.cache
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.csproj.CoreCompileInputs.cache
+D:\repos\Calista\builds\Debug\TestWindow.exe.config
+D:\repos\Calista\builds\Debug\TestWindow.exe
+D:\repos\Calista\builds\Debug\TestWindow.pdb
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.csproj.CopyComplete
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.exe
+D:\repos\Calista\src\TestWindow\obj\Debug\TestWindow.pdb
