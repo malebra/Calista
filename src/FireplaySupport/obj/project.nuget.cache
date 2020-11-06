@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNhUx8Gz5LItEA4aIqIUSO+nVVvzAnRot2m5Wm+9h15LqI0tCGjd9T27VQqG92z+dpbfMsa5jXN6m+nG/RwWGA==",
+  "dgSpecHash": "0qBcV+jjnid22/uVVXQHVDQ7PVb6al0Q29cPOkByRy+mQQDw9UmNT7RWb9TMnQTav6FlrTEKelrNZ8EauXEYSw==",
   "success": true,
-  "projectFilePath": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj",
+  "projectFilePath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Borno\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
@@ -16,12 +16,5 @@
     "C:\\Users\\Borno\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Borno\\.nuget\\packages\\taglib-sharp-netstandard2.0\\2.1.0\\taglib-sharp-netstandard2.0.2.1.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\repos\\Calista\\src\\src\\FireplaySupport\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

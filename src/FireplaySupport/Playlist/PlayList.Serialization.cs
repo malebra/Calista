@@ -37,15 +37,20 @@ namespace Calista.FireplaySupport
             try
             {
                 using (StreamReader sr = new StreamReader(path, Encoding.Default))
+                using (XmlReader xr = XmlReader.Create(sr))
                 {
                     if (stopDeserialization) throw new OperationCanceledException();
 
-                    var popo = xmlSerializer.Deserialize(sr);
+                    if (!xmlSerializer.CanDeserialize(xr))
+                    {
+                        throw new InvalidOperationException("The file does not contain valid Playlist data!");
+                    }
+                    var popo = xmlSerializer.Deserialize(xr);
                     result = (PlayList)popo;
                     popo = null;
 
 
-                    if (stopDeserialization) throw new OperationCanceledException(); 
+                    if (stopDeserialization) throw new OperationCanceledException();
                 }
             }
             catch (OperationCanceledException ex)
@@ -53,10 +58,11 @@ namespace Calista.FireplaySupport
                 stopDeserialization = false;
                 throw ex;
             }
-            catch (InvalidOperationException)
+            catch (InvalidOperationException ex)
             {
-                Logger.Error($"There was a problem parsing the XML date from the list at the location: {path}");
-                if (!ignoreError) throw new InvalidOperationException(message: $"There was a problem parsing the XML date from the list at the location: {path}");
+                var mess = $"There was a problem parsing the XML date from the list at the location: {path}!\n{ex.Message}";
+                Logger.Error(mess);
+                if (!ignoreError) throw new InvalidOperationException(message: mess);
             }
             if (result != null)
             {
@@ -100,7 +106,25 @@ namespace Calista.FireplaySupport
         /// <exception cref="InvalidOperationException"/>
         public async static Task<PlayList> DeserializeAsync(string path, bool ignoreError = false)
         {
-            return await Task.Run(() => Deserialize(path, ignoreError));
+            Exception exc = null;
+            var res = await Task.Run(() =>
+            {
+                try
+                {
+                    return Deserialize(path, ignoreError);
+                }
+                catch (Exception ex)
+                {
+                    exc = ex;
+                    return null;
+                }
+            });
+
+            if (exc != null)
+            {
+                throw exc;
+            }
+            return null;
         }
 
         /// <summary>
@@ -114,6 +138,7 @@ namespace Calista.FireplaySupport
         /// <exception cref="InvalidOperationException"/>
         public async static Task<PlayList> DeserializeAsync(string path, CancellationToken ct, bool ignoreError = false)
         {
+            Exception exc = null;
             var result = await Task.Run(() =>
             {
                 try
@@ -126,12 +151,17 @@ namespace Calista.FireplaySupport
                     }
                     return l;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    exc = ex;
                     return new PlayList();
                 }
             }, ct);
 
+            if (exc != null)
+            {
+                throw exc;
+            }
             ct.ThrowIfCancellationRequested();
             return result;
         }
@@ -147,6 +177,7 @@ namespace Calista.FireplaySupport
         /// <exception cref="InvalidOperationException"/>
         public async static Task<PlayList> DeserializeAsync(string[] paths, IProgress<int> progress = null, bool ignoreError = false)
         {
+            Exception exc = null;
             int val = 0;
             List<Task<PlayList>> tasks = new List<Task<PlayList>>();
             foreach (string path in paths)
@@ -159,15 +190,18 @@ namespace Calista.FireplaySupport
                         progress.Report((++val * 100) / paths.Count());
                         return res;
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        if (exc == null) exc = ex;
                         return new PlayList();
                     }
                 });
 
                 tasks.Add(t);
             }
-            return new PlayList(await Task.WhenAll(tasks));
+            var results = new PlayList(await Task.WhenAll(tasks));
+            if (exc != null) throw exc;
+            return results;
         }
 
         /// <summary>
@@ -183,6 +217,7 @@ namespace Calista.FireplaySupport
         /// <exception cref="OperationCanceledException"/>
         public async static Task<PlayList> DeserializeAsync(string[] paths, CancellationToken ct, IProgress<int> progress = null, bool ignoreError = false)
         {
+            Exception exc = null;
             int val = 0;
             List<Task<PlayList>> tasks = new List<Task<PlayList>>();
             foreach (string path in paths)
@@ -201,8 +236,9 @@ namespace Calista.FireplaySupport
                         progress.Report((++val * 100) / paths.Count());
                         return res;
                     }
-                    catch 
+                    catch (Exception ex)
                     {
+                        if (exc == null) exc = ex;
                         return new PlayList();
                     }
                 }, ct);
@@ -212,6 +248,7 @@ namespace Calista.FireplaySupport
             }
             var results = await Task.WhenAll(tasks);
             ct.ThrowIfCancellationRequested();
+            if (exc != null) throw exc;
             return new PlayList(results);
         }
 
@@ -226,6 +263,7 @@ namespace Calista.FireplaySupport
         /// <exception cref="InvalidOperationException"/>
         public async static Task<PlayList> DeserializeParallelAsync(string[] paths, IProgress<int> progress = null, bool ignoreError = false)
         {
+            Exception exc = null;
             int val = 0;
             List<Task<PlayList>> tasks = new List<Task<PlayList>>();
             foreach (string path in paths)
@@ -238,8 +276,9 @@ namespace Calista.FireplaySupport
                         progress.Report((++val * 100) / paths.Count());
                         return res;
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        if (exc == null )exc = ex;
                         return new PlayList();
                     }
                 });
@@ -251,7 +290,8 @@ namespace Calista.FireplaySupport
             Task.WaitAll(tasks.ToArray());
 
             var results = tasks.Select(t => t.Result);
-            tasks.ForEach(t => t.Dispose());
+            tasks.ForEach(t => t?.Dispose());
+            if (exc != null) throw exc;
             return new PlayList(results);
         }
 
@@ -266,6 +306,7 @@ namespace Calista.FireplaySupport
         /// <exception cref="InvalidOperationException"/>
         public async static Task<PlayList> DeserializeParallelAsync(string[] paths, CancellationToken ct, IProgress<int> progress = null, bool ignoreError = false)
         {
+            Exception exc = null;
             int val = 0;
             List<Task<PlayList>> tasks = new List<Task<PlayList>>();
             foreach (string path in paths)
@@ -284,8 +325,9 @@ namespace Calista.FireplaySupport
                         progress.Report((++val * 100) / paths.Count());
                         return res;
                     }
-                    catch 
+                    catch (Exception ex)
                     {
+                        if (exc == null) exc = ex;
                         return new PlayList();
                     }
                 });
@@ -295,6 +337,7 @@ namespace Calista.FireplaySupport
             await Task.Run(() => Parallel.ForEach<Task<PlayList>>(tasks, (task) => task.Start()));
             Task.WaitAll(tasks.ToArray());
             ct.ThrowIfCancellationRequested();
+            if (exc != null) throw exc;
             return new PlayList(tasks.Select(t => t.Result));
         }
 
@@ -329,67 +372,6 @@ namespace Calista.FireplaySupport
             }
         }
 
-        ///// <summary>
-        ///// Serializes the <paramref name="list"/> <see cref="PlayList"/> to the <paramref name="sw"/> <see cref="StreamWriter"/> <b>asynchronously</b>
-        ///// </summary>
-        ///// <param name="list">The list to synchronize.</param>
-        ///// <param name="sw">The <see cref="StreamWriter"/> used to synchronize the list.</param>
-        ///// <returns></returns>
-        ///// <exception cref="InvalidOperationException"/>
-        //public async static void SerializeAsync(StreamWriter sw, PlayList list)
-        //{
-        //    XmlSerializer serializer = new XmlSerializer(typeof(PlayList));
-        //    XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
-        //    ns.Add("", "");
-
-        //    await Task.Run(() =>
-        //    {
-        //        StreamWriter sww = new StreamWriter(sw.BaseStream, Encoding.Default);
-        //        XmlWriter xw = XmlWriter.Create(sww, new XmlWriterSettings() { Indent = true, OmitXmlDeclaration = true, NewLineOnAttributes = true });
-        //        try
-        //        {
-        //            serializer.Serialize(xw, list, ns);
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            xw.Close();
-        //            sw.Close();
-        //            throw e;
-        //        }
-        //    });
-        //}
-
-        ///// <summary>
-        ///// Serializes the <paramref name="list"/> <see cref="PlayList"/> to the <paramref name="sw"/> <see cref="StreamWriter"/> <b>asynchronously</b>
-        ///// </summary>
-        ///// <param name="list">The list to synchronize.</param>
-        ///// <param name="sw">The <see cref="StreamWriter"/> used to synchronize the list.</param>
-        ///// <param name="ct">The <see cref="CancellationToken"/> used to stop the operation.</param>
-        ///// <returns></returns>
-        ///// <exception cref="InvalidOperationException"/>
-        //public async static void SerializeAsync(StreamWriter sw, PlayList list, CancellationToken ct)
-        //{
-        //    XmlSerializer serializer = new XmlSerializer(typeof(PlayList));
-        //    XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
-        //    ns.Add("", "");
-
-        //    await Task.Run(() =>
-        //    {
-        //        StreamWriter sww = new StreamWriter(sw.BaseStream, Encoding.Default);
-        //        XmlWriter xw = XmlWriter.Create(sww, new XmlWriterSettings() { Indent = true, OmitXmlDeclaration = true, NewLineOnAttributes = true });
-        //        try
-        //        {
-        //            serializer.Serialize(xw, list, ns);
-        //            ct.ThrowIfCancellationRequested();
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            xw?.Close();
-        //            sw?.Close();
-        //            throw e;
-        //        }
-        //    }, ct);
-        //}
 
         #endregion
 

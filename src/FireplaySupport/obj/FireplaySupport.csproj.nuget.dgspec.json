@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj": {}
+    "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {}
   },
   "projects": {
-    "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj": {
+    "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "projectUniqueName": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
         "projectName": "Calista.FireplaySupport",
-        "projectPath": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "projectPath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
         "packagesPath": "C:\\Users\\Borno\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\Calista\\src\\src\\FireplaySupport\\obj\\",
+        "outputPath": "D:\\repos\\Calista\\src\\FireplaySupport\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
