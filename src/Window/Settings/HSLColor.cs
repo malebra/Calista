@@ -20,11 +20,11 @@ namespace Calista.FireplaySupport
         private double luminosity = 1.0;
         
         
-        [XmlElement("Hue", IsNullable = true)]
+        //[XmlElement("Hue", IsNullable = true)]
         public string HueString { get => Hue.ToString(); set => Hue = Double.Parse(value); }
-        [XmlElement("Saturation", IsNullable = true)]
+        //[XmlElement("Saturation", IsNullable = true)]
         public string SaturationString { get => Saturation.ToString(); set => Saturation = Double.Parse(value); }
-        [XmlElement("Luminosity", IsNullable = true)]
+        //[XmlElement("Luminosity", IsNullable = true)]
         public string LuminosityString { get => Luminosity.ToString(); set => Luminosity = Double.Parse(value); }
 
         [XmlElement("RGB", IsNullable = true)]

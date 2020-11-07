@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
+        "projectName": "MixMaster",
+        "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
+        "packagesPath": "C:\\Users\\nozia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nozia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
+                "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "projectName": "Calista.FireplaySupport",
+        "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "packagesPath": "C:\\Users\\nozia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nozia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "taglib-sharp-netstandard2.0": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireplaySupport", "Fireplay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Window", "Window\Window.csproj", "{B72FED31-3176-4F92-9018-7E66E16EE617}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixMaster", "Calista.MixMaster\MixMaster.csproj", "{430A61B9-111F-4573-9481-FF439C19D4EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,12 @@ Global
 		{B72FED31-3176-4F92-9018-7E66E16EE617}.Finish|Any CPU.Build.0 = Finish|Any CPU
 		{B72FED31-3176-4F92-9018-7E66E16EE617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B72FED31-3176-4F92-9018-7E66E16EE617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Finish|Any CPU.ActiveCfg = Debug|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Finish|Any CPU.Build.0 = Debug|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430A61B9-111F-4573-9481-FF439C19D4EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

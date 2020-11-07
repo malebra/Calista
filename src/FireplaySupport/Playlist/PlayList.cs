@@ -7,11 +7,12 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Linq;
 using System.Threading;
+using System.Collections;
 
 namespace Calista.FireplaySupport
 {
     [XmlRoot("PlayList")]
-    public partial class PlayList : IDisposable
+    public partial class PlayList : IDisposable, IEnumerable<PlayItem>
     {
 
         #region ### Constructor & Destructor ###
@@ -230,7 +231,19 @@ namespace Calista.FireplaySupport
         #endregion
 
 
+        #region ### IEnumerable ###
 
+        public IEnumerator<PlayItem> GetEnumerator()
+        {
+            return Items.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return Items.GetEnumerator();
+        }
+
+        #endregion
 
 
         #region ### Static Methods ###

@@ -10,3 +10,12 @@ D:\repos\Calista\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.pdb
 D:\repos\Calista\builds\libraries\Calista.FireplaySupport.deps.json
 D:\repos\Calista\builds\libraries\Calista.FireplaySupport.dll
 D:\repos\Calista\builds\libraries\Calista.FireplaySupport.pdb
+C:\Users\nozia\repos\Calista\builds\lib\Calista.FireplaySupport.deps.json
+C:\Users\nozia\repos\Calista\builds\lib\Calista.FireplaySupport.dll
+C:\Users\nozia\repos\Calista\builds\lib\Calista.FireplaySupport.pdb
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.csprojAssemblyReference.cache
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.AssemblyInfoInputs.cache
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.AssemblyInfo.cs
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.csproj.CoreCompileInputs.cache
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.dll
+C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.pdb

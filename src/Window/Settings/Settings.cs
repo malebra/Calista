@@ -24,7 +24,7 @@ namespace Calista.MainWindow
         public string DefaultSavePath { get; set; } = string.Empty;
 
         [XmlElement("Colors")]
-        public Colors Colors { get; set; } = Colors.Default;
+        public Colors Colors { get; set; } = null;
 
 
         public void Save()

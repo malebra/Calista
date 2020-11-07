@@ -1,0 +1,5 @@
+C:\Users\nozia\repos\Calista\builds\Debug\lib\Calista.MixMaster.deps.json
+C:\Users\nozia\repos\Calista\builds\Debug\lib\Calista.MixMaster.dll
+C:\Users\nozia\repos\Calista\src\Calista.MixMaster\obj\Debug\Calista.MixMaster.csprojAssemblyReference.cache
+C:\Users\nozia\repos\Calista\src\Calista.MixMaster\obj\Debug\Calista.MixMaster.AssemblyInfoInputs.cache
+C:\Users\nozia\repos\Calista\src\Calista.MixMaster\obj\Debug\Calista.MixMaster.AssemblyInfo.cs

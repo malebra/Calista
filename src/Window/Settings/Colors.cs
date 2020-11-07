@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -17,12 +18,15 @@ namespace Calista.MainWindow
     public class Colors
     {
 
-        [XmlElement("Color")]
-        public HSLColor Base { get; set; }
-        [XmlIgnore]
-        public HSLColor Side1 { get { var tmp = new HSLColor(Base); tmp.Luminosity *= 1.8f; return tmp; }  } 
-        [XmlIgnore]
-        public HSLColor Side2 { get { var tmp = new HSLColor(Base); tmp.Hue *= 1f; tmp.Saturation *= 0.45f; tmp.Luminosity *= 1.25f; return tmp; } }
+        [XmlElement("Color", IsNullable = true)]
+        public HSLColor Base { get => _base; set => _base = value; }
+        private HSLColor _base = null;
+        [XmlElement("SideColor1", IsNullable = true)]
+        public HSLColor Side1 { get { if (_side1 != null) return _side1; if (Base == null) return null; var tmp = new HSLColor(Base); tmp.Luminosity *= 1.8f; return tmp; } set { _side1 = value; } }
+        private HSLColor _side1 = null;
+        [XmlElement("SideColor2", IsNullable = true)]
+        public HSLColor Side2 { get { if (_side2 != null) return _side2; if (Base == null) return null; var tmp = new HSLColor(Base); tmp.Hue *= 1f; tmp.Saturation *= 0.45f; tmp.Luminosity *= 1.25f; return tmp; } set { _side2 = value; } }
+        private HSLColor _side2 = null;
 
 
         public static Colors Default => new Colors()

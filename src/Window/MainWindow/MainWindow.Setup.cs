@@ -22,6 +22,8 @@ namespace Calista.MainWindow
             this.DragDrop += new DragEventHandler(dragDropFiles);
             this.DragEnter += new DragEventHandler(dragEnter);
 
+            
+
             listBox.Enabled = true;
             listBox.DataSource = Files;
             listBox.SelectionMode = SelectionMode.MultiExtended;

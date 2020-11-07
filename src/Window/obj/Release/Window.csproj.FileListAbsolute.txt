@@ -10,3 +10,9 @@ D:\repos\Calista\src\Window\obj\Release\FireXer2.exe.config
 D:\repos\Calista\src\Window\bin\Release\FireXer2.exe.config
 D:\repos\Calista\src\Window\bin\Release\FireXer2.exe
 D:\repos\Calista\src\Window\obj\Release\Window.csproj.CopyComplete
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\Window.csprojAssemblyReference.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\Calista.MainWindow.MainWindow.resources
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\Calista.MainWindow.Properties.Resources.resources
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\Window.csproj.GenerateResource.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\Window.csproj.CoreCompileInputs.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Release\FireXer2.exe

@@ -27,7 +27,7 @@ namespace Calista.MainWindow
             InitializeComponent();
             SettingsContainer.Load();
             Setup();
-            SetColor();
+            SetColor(this, new EventArgs());
         }
 
         private void upButton_Click(object sender, EventArgs e)
@@ -202,9 +202,13 @@ namespace Calista.MainWindow
             
         }
 
-        private void SetColor()
+        private void SetColor(object sender, EventArgs e)
         {
             var colors = SettingsContainer.Settings.Colors;
+            if (colors == null)
+            {
+                return;
+            }
             this.BackColor = colors.Base;
 
             foreach (var item in this.Controls.Cast<Control>())

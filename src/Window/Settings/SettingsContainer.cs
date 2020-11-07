@@ -20,7 +20,7 @@ namespace Calista.MainWindow
             if (!Directory.Exists($"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\FireXer"))
             {
                 Directory.CreateDirectory($"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\FireXer");
-                Directory.CreateDirectory($"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\FireXer\\Colors");
+                //Directory.CreateDirectory($"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\FireXer\\Colors");
             }
             Settings = Settings.Load();
         }

@@ -10,3 +10,13 @@ D:\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.MainWindow.resources
 D:\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.Properties.Resources.resources
 D:\repos\Calista\src\Window\obj\Debug\FireXer2.exe.config
 D:\repos\Calista\src\Window\obj\Debug\Window.csproj.CopyComplete
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\Window.csprojAssemblyReference.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.MainWindow.resources
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\Calista.MainWindow.Properties.Resources.resources
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\Window.csproj.GenerateResource.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\Window.csproj.CoreCompileInputs.cache
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\FireXer2.exe
+C:\Users\nozia\repos\Calista\src\Window\obj\Debug\FireXer2.pdb
+C:\Users\nozia\repos\Calista\builds\Debug\FireXer2.exe.config
+C:\Users\nozia\repos\Calista\builds\Debug\FireXer2.exe
+C:\Users\nozia\repos\Calista\builds\Debug\FireXer2.pdb
