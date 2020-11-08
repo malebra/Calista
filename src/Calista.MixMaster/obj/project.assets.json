@@ -618,19 +618,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nozia\\.nuget\\packages\\": {}
+    "C:\\Users\\fpback\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
+      "projectUniqueName": "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj",
       "projectName": "MixMaster",
-      "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
-      "packagesPath": "C:\\Users\\nozia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nozia\\repos\\Calista\\src\\Calista.MixMaster\\obj\\",
+      "projectPath": "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj",
+      "packagesPath": "C:\\Users\\fpback\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\src\\Calista.MixMaster\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nozia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fpback\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -643,8 +643,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
-              "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj"
+            "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj": {
+              "projectPath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj"
             }
           }
         }
@@ -679,7 +679,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

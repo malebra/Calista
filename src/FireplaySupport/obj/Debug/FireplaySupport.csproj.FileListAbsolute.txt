@@ -19,3 +19,12 @@ C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.Assem
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\FireplaySupport.csproj.CoreCompileInputs.cache
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.dll
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.pdb
+D:\repos\builds\Debug\lib\Calista.FireplaySupport.deps.json
+D:\repos\builds\Debug\lib\Calista.FireplaySupport.dll
+D:\repos\builds\Debug\lib\Calista.FireplaySupport.pdb
+D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.csprojAssemblyReference.cache
+D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.AssemblyInfoInputs.cache
+D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.AssemblyInfo.cs
+D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.csproj.CoreCompileInputs.cache
+D:\repos\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.dll
+D:\repos\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.pdb

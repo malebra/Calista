@@ -598,19 +598,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nozia\\.nuget\\packages\\": {}
+    "C:\\Users\\fpback\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
+      "projectUniqueName": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
       "projectName": "Calista.FireplaySupport",
-      "projectPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
-      "packagesPath": "C:\\Users\\nozia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nozia\\repos\\Calista\\src\\FireplaySupport\\obj\\",
+      "projectPath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+      "packagesPath": "C:\\Users\\fpback\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\src\\FireplaySupport\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nozia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fpback\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -659,7 +659,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

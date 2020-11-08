@@ -1,0 +1,4 @@
+D:\repos\src\Calista.MixMaster\obj\Debug\MixMaster.csprojAssemblyReference.cache
+D:\repos\src\Calista.MixMaster\obj\Debug\MixMaster.AssemblyInfoInputs.cache
+D:\repos\src\Calista.MixMaster\obj\Debug\MixMaster.AssemblyInfo.cs
+D:\repos\src\Calista.MixMaster\obj\Debug\MixMaster.csproj.CoreCompileInputs.cache

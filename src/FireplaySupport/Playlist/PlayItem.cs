@@ -15,13 +15,13 @@ namespace Calista.FireplaySupport
     public class PlayItem : IDisposable
     {
 
-        private PlayItem()
+        protected PlayItem()
         {
 
             
         }
 
-        private PlayItem(PlayItem item)
+        public PlayItem(PlayItem item)
         {
             _ID = item._ID;
             _Naziv = item._Naziv;
@@ -111,72 +111,72 @@ namespace Calista.FireplaySupport
 
         public string Path { get; set; }
 
-        private string _ID = String.Empty;
-        private string _Naziv = String.Empty;
-        private string _Autor = String.Empty;
-        private string _Album = String.Empty;
-        private string _Info = String.Empty;
-        private string _Tip = String.Empty;
-        private string _Color = String.Empty;
-        private string _NaKanalu = String.Empty;
-        private string _PathName = String.Empty;
-        private string _ItemType = String.Empty;
-        private string _StartCue
+        protected string _ID = String.Empty;
+        protected string _Naziv = String.Empty;
+        protected string _Autor = String.Empty;
+        protected string _Album = String.Empty;
+        protected string _Info = String.Empty;
+        protected string _Tip = String.Empty;
+        protected string _Color = String.Empty;
+        protected string _NaKanalu = String.Empty;
+        protected string _PathName = String.Empty;
+        protected string _ItemType = String.Empty;
+        protected string _StartCue
         {
             get => _Start.TotalSeconds.ToString().Replace(',', '.');
             set => _Start = value != null ? TimeSpan.FromSeconds(Convert.ToDouble(value.Replace('.', ','))) : TimeSpan.Zero;
         }
-        private string _EndCue
+        protected string _EndCue
         {
             get => _Finish.TotalSeconds.ToString().Replace(',', '.');
             set => _Finish = value != null ? TimeSpan.FromSeconds(Convert.ToDouble(value.Replace('.', ','))) : TimeSpan.Zero;
         }
-        private string _Pocetak
+        protected string _Pocetak
         {
             get => _Begining.TotalSeconds.ToString().Replace(',', '.');
             set => _Begining = value != null ? TimeSpan.FromSeconds(Convert.ToDouble(value.Replace('.', ','))) : TimeSpan.Zero;
         }
-        private string _Trajanje
+        protected string _Trajanje
         {
             get => _Duration.TotalSeconds.ToString().Replace(',', '.');
             set => _Duration = value != null ? TimeSpan.FromSeconds(Convert.ToDouble(value.Replace('.', ','))) : TimeSpan.Zero;
         }
-        private string _Vrijeme
+        protected string _Vrijeme
         {
             get => _Time.ToString("o");
             set => _Time = value != null ? DateTime.Parse(value, null, System.Globalization.DateTimeStyles.RoundtripKind) : DateTime.MinValue;
         }
-        private DateTime _Time;
-        private TimeSpan _Duration = TimeSpan.Zero;
-        private TimeSpan _Begining = TimeSpan.Zero;
-        private TimeSpan _Start = TimeSpan.Zero;
-        private TimeSpan _Finish = TimeSpan.Zero;
-        private string _StvarnoVrijemePocetka = String.Empty;
-        private string _VrijemeMinTermin = String.Empty;
-        private string _VrijemeMaxTermin = String.Empty;
-        private string _PrviU_Bloku = String.Empty;
-        private string _ZadnjiU_Bloku = String.Empty;
-        private string _JediniU_Bloku = String.Empty;
-        private string _FiksniU_Terminu = String.Empty;
-        private string _Reklama = String.Empty;
-        private string _WaveIn = String.Empty;
-        private string _SoftIn
+        protected DateTime _Time;
+        protected TimeSpan _Duration = TimeSpan.Zero;
+        protected TimeSpan _Begining = TimeSpan.Zero;
+        protected TimeSpan _Start = TimeSpan.Zero;
+        protected TimeSpan _Finish = TimeSpan.Zero;
+        protected string _StvarnoVrijemePocetka = String.Empty;
+        protected string _VrijemeMinTermin = String.Empty;
+        protected string _VrijemeMaxTermin = String.Empty;
+        protected string _PrviU_Bloku = String.Empty;
+        protected string _ZadnjiU_Bloku = String.Empty;
+        protected string _JediniU_Bloku = String.Empty;
+        protected string _FiksniU_Terminu = String.Empty;
+        protected string _Reklama = String.Empty;
+        protected string _WaveIn = String.Empty;
+        protected string _SoftIn
         {
             get => _fadeIn.Milliseconds.ToString();
             set => _fadeIn = value != null ? TimeSpan.FromMilliseconds(Int32.Parse(value)) : TimeSpan.Zero;
         }
-        private string _SoftOut
+        protected string _SoftOut
         {
             get => _fadeOut.Milliseconds.ToString();
             set => _fadeOut = value != null ? TimeSpan.FromMilliseconds(Int32.Parse(value)) : TimeSpan.Zero;
         }
-        private TimeSpan _fadeIn = TimeSpan.Zero;
-        private TimeSpan _fadeOut = TimeSpan.Zero;
-        private string _Volume = String.Empty;
-        private string _OriginalStartCue = String.Empty;
-        private string _OriginalEndCue = String.Empty;
-        private string _OriginalPocetak = String.Empty;
-        private string _OriginalTrajanje = String.Empty;
+        protected TimeSpan _fadeIn = TimeSpan.Zero;
+        protected TimeSpan _fadeOut = TimeSpan.Zero;
+        protected string _Volume = String.Empty;
+        protected string _OriginalStartCue = String.Empty;
+        protected string _OriginalEndCue = String.Empty;
+        protected string _OriginalPocetak = String.Empty;
+        protected string _OriginalTrajanje = String.Empty;
 
 
         [XmlElement]
@@ -299,7 +299,7 @@ namespace Calista.FireplaySupport
         public delegate void SongChangedEvent(PlayItem m, EventArgs e);
         public event SongChangedEvent SongChanged;
 
-        private void OnSongChange()
+        protected void OnSongChange()
         {
             SongChanged?.Invoke(this, new EventArgs());
         }
