@@ -28,7 +28,10 @@ namespace Calista.MainWindow
             listBox.DataSource = Files;
             listBox.SelectionMode = SelectionMode.MultiExtended;
 
-            cancelButton.EnabledChanged += (a, b) => cancelButton.BackColor = cancelButton.Enabled ? SettingsContainer.Settings.Colors.Side1 : SettingsContainer.Settings.Colors.Side2;
+            if (SettingsContainer.Settings.Colors != null)
+            {
+                cancelButton.EnabledChanged += (a, b) => cancelButton.BackColor = cancelButton.Enabled ? SettingsContainer.Settings.Colors.Side1 : SettingsContainer.Settings.Colors.Side2; 
+            }
 
             saveTextBox.LostFocus += (a, b) =>
             {

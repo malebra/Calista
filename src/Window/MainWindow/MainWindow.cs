@@ -106,9 +106,21 @@ namespace Calista.MainWindow
             string path = saveTextBox.Text;
             string[] files = Files.ToArray();
 
-            if (!Directory.Exists(Path.GetDirectoryName(path)))
+
+
+            try
             {
-                MessageBox.Show($"The folder {Path.GetDirectoryName(path)} does not exist!", "Missing Folder", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (!Directory.Exists(Path.GetDirectoryName(path)))
+                {
+                    MessageBox.Show($"The folder {Path.GetDirectoryName(path)} does not exist!", "Missing Folder", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show($"The path isn not valid.", "Invalid Path", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                progressBar.Visible = false;
+                progressBar.Value = 0;
+                return;
             }
 
             cancelButton.Enabled = true;

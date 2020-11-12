@@ -28,3 +28,6 @@ D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.AssemblyInfo.cs
 D:\repos\src\FireplaySupport\obj\Debug\FireplaySupport.csproj.CoreCompileInputs.cache
 D:\repos\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.dll
 D:\repos\src\FireplaySupport\obj\Debug\Calista.FireplaySupport.pdb
+D:\repos\Calista\builds\Debug\lib\Calista.FireplaySupport.deps.json
+D:\repos\Calista\builds\Debug\lib\Calista.FireplaySupport.dll
+D:\repos\Calista\builds\Debug\lib\Calista.FireplaySupport.pdb
