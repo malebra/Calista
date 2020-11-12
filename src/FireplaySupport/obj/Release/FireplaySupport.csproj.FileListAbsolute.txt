@@ -16,3 +16,5 @@ C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Release\FireplaySupport.Ass
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Release\FireplaySupport.AssemblyInfo.cs
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Release\FireplaySupport.csproj.CoreCompileInputs.cache
 C:\Users\nozia\repos\Calista\src\FireplaySupport\obj\Release\Calista.FireplaySupport.dll
+D:\repos\Calista\builds\Release\lib\Calista.FireplaySupport.deps.json
+D:\repos\Calista\builds\Release\lib\Calista.FireplaySupport.dll

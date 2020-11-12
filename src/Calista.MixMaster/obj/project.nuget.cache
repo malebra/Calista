@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j3OSpdxWMA6OhCxE/nEOQRUDv/+qADJ/ynbM7rj2MgtwQZnBanpmwrglKRoAOjqMELKOV8ZaQcEmgh1o6QSCnQ==",
+  "dgSpecHash": "fDBoSagS+iYX1lFmp0YIqQSkAtKXCyqozxZfFykCpKGFkCr991EIA/9aBpyQCHr+kJfTEuv2hg/kUHcRUGcdTw==",
   "success": true,
-  "projectFilePath": "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj",
+  "projectFilePath": "D:\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fpback\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\fpback\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

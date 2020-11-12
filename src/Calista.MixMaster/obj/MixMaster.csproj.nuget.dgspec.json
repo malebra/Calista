@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj": {}
+    "D:\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj": {}
   },
   "projects": {
-    "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj": {
+    "D:\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj",
+        "projectUniqueName": "D:\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
         "projectName": "MixMaster",
-        "projectPath": "D:\\repos\\src\\Calista.MixMaster\\MixMaster.csproj",
+        "projectPath": "D:\\repos\\Calista\\src\\Calista.MixMaster\\MixMaster.csproj",
         "packagesPath": "C:\\Users\\fpback\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\src\\Calista.MixMaster\\obj\\",
+        "outputPath": "D:\\repos\\Calista\\src\\Calista.MixMaster\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fpback\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj": {
-                "projectPath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj"
+              "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
+                "projectPath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj": {
+    "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "projectUniqueName": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
         "projectName": "Calista.FireplaySupport",
-        "projectPath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+        "projectPath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
         "packagesPath": "C:\\Users\\fpback\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\src\\FireplaySupport\\obj\\",
+        "outputPath": "D:\\repos\\Calista\\src\\FireplaySupport\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fpback\\AppData\\Roaming\\NuGet\\NuGet.Config",

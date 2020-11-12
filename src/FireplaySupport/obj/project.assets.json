@@ -603,11 +603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+      "projectUniqueName": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
       "projectName": "Calista.FireplaySupport",
-      "projectPath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+      "projectPath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
       "packagesPath": "C:\\Users\\fpback\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\src\\FireplaySupport\\obj\\",
+      "outputPath": "D:\\repos\\Calista\\src\\FireplaySupport\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fpback\\AppData\\Roaming\\NuGet\\NuGet.Config",

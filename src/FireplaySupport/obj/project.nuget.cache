@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "62LNNkC1HUBcbYGMyPxX1GM15cgj25Lf0/oZKZyz3BS6EdBy0WrcyasbSBE7Zh7f2fKwBKl9X5n3cy5b02X2Zg==",
+  "dgSpecHash": "CCzLrq3JRRnvqK53jX52i8uQDYwR6ud2vsZNOXpR9fxvPhpThiMghLmeYtvTeJ80YXc9SxluYJC1rRezhQ1G7w==",
   "success": true,
-  "projectFilePath": "D:\\repos\\src\\FireplaySupport\\FireplaySupport.csproj",
+  "projectFilePath": "D:\\repos\\Calista\\src\\FireplaySupport\\FireplaySupport.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fpback\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\fpback\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
